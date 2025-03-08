@@ -1,0 +1,158 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Pokedex",
+    "collectionId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+    "dateExported": "2025-03-08T21:31:26.164Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "51eb6d21-4de7-40f0-9122-345815710cd8",
+            "colId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+            "containerId": "",
+            "name": "Status Check",
+            "url": "localhost:3000/api/status",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-03-05T01:45:47.072Z",
+            "modified": "2025-03-05T01:46:08.040Z",
+            "headers": []
+        },
+        {
+            "_id": "3a871b99-2659-4b00-9665-c1411cdedbb5",
+            "colId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+            "containerId": "",
+            "name": "Captura de Pokemon",
+            "url": "localhost:3000/api/captura/201",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-03-05T01:50:16.441Z",
+            "modified": "2025-03-08T21:13:54.029Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZS50ZXN0ZUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3NDE0NjYzNTd9.qEV2uDel5Rn90Fxjvb50GJ7GDwbcI0iMxeXGO0agVe4"
+                }
+            ]
+        },
+        {
+            "_id": "df76cb06-32d8-476e-8302-09ee6d426a78",
+            "colId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+            "containerId": "",
+            "name": "Busca Pokemon por ID",
+            "url": "localhost:3000/api/pokemons/67c7733d570f71f64be00f18",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-03-05T02:51:42.390Z",
+            "modified": "2025-03-08T21:29:13.279Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZS50ZXN0ZUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3NDE0NjYzNTd9.qEV2uDel5Rn90Fxjvb50GJ7GDwbcI0iMxeXGO0agVe4"
+                }
+            ]
+        },
+        {
+            "_id": "6c7f2696-dac2-4681-a1e8-d3c29d1a4919",
+            "colId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+            "containerId": "",
+            "name": "Atualização de Pokemon (PATCH)",
+            "url": "localhost:3000/api/pokemons/67c7733d570f71f64be00f18",
+            "method": "PATCH",
+            "sortNum": 80000,
+            "created": "2025-03-05T03:25:02.018Z",
+            "modified": "2025-03-08T21:28:50.769Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZS50ZXN0ZUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3NDE0NjYzNTd9.qEV2uDel5Rn90Fxjvb50GJ7GDwbcI0iMxeXGO0agVe4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "capturadoPor",
+                    "value": "67cbc1e167134610f0db7318",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Ultra solgaleo\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5b08dd05-282b-4cce-8798-8f0998354867",
+            "colId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+            "containerId": "",
+            "name": "Pesquisa Pokemon Com 3 Critérios",
+            "url": "localhost:3000/api/pokemons/",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2025-03-05T19:56:36.793Z",
+            "modified": "2025-03-08T20:37:14.052Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZS50ZXN0ZUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3NDE0NjU5NzV9.UqcZgxTrCCrnKnfoMETyp6CT_267zZxLnGX_QXrCRdc"
+                }
+            ],
+            "params": [
+                {
+                    "name": "alturaMinima",
+                    "value": "20",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "nomeComecaCom",
+                    "value": "sol",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "pesoMinimo",
+                    "value": "500",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "d994762f-50cb-4130-b2e8-9beeedb90b85",
+            "colId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+            "containerId": "",
+            "name": "Remove Pokemon",
+            "url": "localhost:3000/api/pokemons/67cbc1e167134610f0db730e",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2025-03-05T21:02:45.236Z",
+            "modified": "2025-03-08T21:15:29.738Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZS50ZXN0ZUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3NDE0NjYzNTd9.qEV2uDel5Rn90Fxjvb50GJ7GDwbcI0iMxeXGO0agVe4"
+                }
+            ]
+        },
+        {
+            "_id": "73ad79eb-c6c6-4a65-878d-00575c9584e3",
+            "colId": "d29f78c6-6803-4e26-b2b3-aa04316cc1f1",
+            "containerId": "",
+            "name": "Login",
+            "url": "localhost:3000/api/autenticacao/login",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2025-03-08T05:38:15.951Z",
+            "modified": "2025-03-08T20:24:20.811Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"alexandre.teste@teste.com.br\",\n  \"senha\": \"a3d5g7j9\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "OdA8uQXpHbNuHhr0ykLtOidxKP-CI2WBECOkZffRWd9KjNOZ0MN1BD50XqzUFxK2cIHQV-vi2McCZhxtdZCJMg"
+}
